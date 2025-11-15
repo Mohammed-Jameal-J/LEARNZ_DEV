@@ -26,9 +26,9 @@ body{
 .container{max-width:1400px;margin:0 auto;padding:0 20px}
 
 /* full-width section: allows background to stretch full viewport while content stays capped */
-.full-width-section{
+.full-width-section {
   width:100%;
-  padding: 36px 0;      /* vertical spacing for the section */
+  padding: 56px 0;      /* increased vertical spacing (desktop) */
   box-sizing:border-box;
 }
 
@@ -37,13 +37,13 @@ body{
   max-width:1200px;
   margin:0 auto;
   width: calc(100% - 64px);  /* default side spacing (32px each side) */
-  padding: 0 32px;           /* internal horizontal padding */
+  padding: 16px 32px;           /* internal horizontal padding */
   box-sizing:border-box;
 }
 
 /* smaller padding on very small screens */
 @media (max-width:640px){
-  .section-inner{ width: calc(100% - 32px); padding: 0 16px; }
+  .section-inner{ width: calc(100% - 32px); padding: 30px 16px; }
 }
 
 /* ---------- Header ---------- */
@@ -90,11 +90,16 @@ body{
 .mobile-nav.open{ display:block; }
 .mobile-nav a{ display:block; padding:10px 0; color:inherit; text-decoration:none }
 
+.site-header + .full-width-section {
+  padding-top: 80px; /* header + breathing room on top of first section */
+}
+
 /* show/hide breakpoints */
 @media(min-width:860px){
   .desktop-only{display:flex}
   .mobile-only{display:none}
   .mobile-nav{display:none !important}
+   .full-width-section { padding: 36px 0; }
 }
 
 /* ---------- Hero ---------- */
@@ -104,7 +109,7 @@ body{
 @media(min-width:860px){ .hero-inner{grid-template-columns:1fr 360px} }
 .hero-title{color:#fff;font-size:34px;line-height:1.05;margin:6px 0 10px;font-weight:800}
 .hero-sub{color:rgba(255,255,255,0.75);max-width:520px}
-.hero-illustration{background:linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));width:220px;height:220px;border-radius:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(0,0,0,0.45)}
+.hero-illustration{background:linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));height:220px;border-radius:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(0,0,0,0.45)}
 .hero-illustration img{width:140px;height:auto}
 
 /* ---------- Sections / Titles ---------- */
@@ -112,7 +117,7 @@ body{
 .section-title{
   font-size:22px;
   color:#ffffff;
-  margin:12px 0 18px;
+  margin:0 0 22px 0;
   font-weight:700;
 }
 
@@ -122,7 +127,10 @@ body{
 @media(min-width:860px){ .skills-grid{grid-template-columns:repeat(4,1fr)} }
 
 /* ---------- skill card ---------- */
-.skill-card{background:#ffffff; border-radius:12px;padding:16px;text-align:center;box-shadow:0 6px 18px rgba(2,6,23,0.35);border:1px solid rgba(2,6,23,0.06)}
+.skill-card{background:#ffffff; border-radius:12px;padding:22px;text-align:center;box-shadow:0 6px 18px rgba(2,6,23,0.35);border:1px solid rgba(2,6,23,0.06);  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;}
 .skill-icon{width:56px;height:56px;border-radius:12px;margin:0 auto 10px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f97316,#ef4444);color:white;font-weight:700}
 .skill-title{font-weight:700;margin-bottom:6px;color:#0f1724}
 .skill-sub{color:var(--muted);font-size:13px}
@@ -238,7 +246,9 @@ body{
   }
 }
 
-
+.hero {
+    margin-top: 40px;
+}
 /* ---------- Profile modal styles ---------- */
 .modal-overlay{
   position:fixed;inset:0;background:rgba(2,6,23,0.6);display:flex;align-items:center;justify-content:center;z-index:80;padding:24px;
@@ -266,4 +276,29 @@ body{
   .hero-title{font-size:28px}
   .skills-grid{grid-template-columns:repeat(2,1fr)}
   .container{padding:0 14px}
+}
+/* larger icon (badge) */
+.skill-icon{
+  width:72px;
+  height:72px;
+  border-radius:16px;
+  margin:0 auto 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* gradient backgrounds (you probably already have these) */
+.skill-icon.html { background: linear-gradient(135deg,#ff7a2b,#ff4d3f); }
+.skill-icon.css  { background: linear-gradient(135deg,#0ea5e9,#0284c7); }
+.skill-icon.js   { background: linear-gradient(135deg,#f59e0b,#f97316); }
+.skill-icon.react{ background: linear-gradient(135deg,#60a5fa,#3b82f6); }
+
+/* text inside the badge */
+.skill-badge-text{
+  font-weight:800;
+  font-size:16px;
+  letter-spacing:0.03em;
 }
