@@ -71,7 +71,7 @@ export default function Header() {
                 <a className="btn-gh" href="https://github.com/Mohammed-Jameal-J" target="_blank" rel="noreferrer">
                   View GitHub
                 </a>
-                <a className="btn-linkedin filled" href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">
+                <a className="btn-linkedin filled" href="https://www.linkedin.com/in/mohammed-jameal-j" target="_blank" rel="noreferrer">
                   View LinkedIn
                 </a>
               </div>

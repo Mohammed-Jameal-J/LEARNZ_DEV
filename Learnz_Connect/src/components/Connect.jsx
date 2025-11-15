@@ -27,7 +27,7 @@ export default function Connect() {
             {/* ---------- LINKEDIN BUTTON ---------- */}
             <a
               className="btn-linkedin filled"
-              href="https://www.linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/mohammed-jameal-j/"
               target="_blank"
               rel="noreferrer"
             >
