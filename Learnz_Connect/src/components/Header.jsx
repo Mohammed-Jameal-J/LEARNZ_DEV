@@ -12,7 +12,7 @@ export default function Header() {
         <div className="section-inner header-inner">
           <div className="header-left">
             <img src={LOGO_PATH} alt="Learned logo" className="logo" />
-            <div className="site-title">LearnzConnect</div>
+            <div className="site-title logo-gradient">LearnzConnect</div>
           </div>
 
           {/* Desktop nav */}

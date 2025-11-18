@@ -291,14 +291,24 @@ body{
 }
 
 /* gradient backgrounds (you probably already have these) */
-.skill-icon.html { background: linear-gradient(135deg,#ff7a2b,#ff4d3f); }
+.skill-icon.html { background: linear-gradient(135deg,#60a5fa,#3b82f6); }
 .skill-icon.css  { background: linear-gradient(135deg,#0ea5e9,#0284c7); }
-.skill-icon.js   { background: linear-gradient(135deg,#f59e0b,#f97316); }
-.skill-icon.react{ background: linear-gradient(135deg,#60a5fa,#3b82f6); }
+.skill-icon.js   { background: linear-gradient(135deg,#60a5fa,#3b82f6); }
+.skill-icon.react{ background: linear-gradient(135deg,#0ea5e9,#0284c7); }
 
 /* text inside the badge */
 .skill-badge-text{
   font-weight:800;
   font-size:16px;
   letter-spacing:0.03em;
+}
+.logo-gradient {
+  background: linear-gradient(90deg, #0284c7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+main {
+    background: #0d1e30;
 }
