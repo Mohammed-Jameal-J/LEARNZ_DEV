@@ -1,8 +1,8 @@
 import React from "react";
 
 const repos = [
-  { name: "HTML Projects (7)", url: "https://github.com/yourusername/html-projects" },
-  { name: "CSS Projects (4)", url: "https://github.com/yourusername/css-projects" },
+  { name: "HTML Projects (5)", url: "https://github.com/Mohammed-Jameal-J/HTML_LEARNZ" },
+  { name: "CSS Projects (17)", url: "https://github.com/Mohammed-Jameal-J/CSS_LEARNZ" },
   { name: "JS Projects (7)", url: "https://github.com/yourusername/js-projects" },
   { name: "React Projects (26)", url: "https://github.com/Mohammed-Jameal-J/REACT_LEARNZ" }
 ];
