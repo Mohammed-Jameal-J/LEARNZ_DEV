@@ -1,10 +1,10 @@
 import React from "react";
 
 const repos = [
-  { name: "HTML Projects (5)", url: "https://github.com/Mohammed-Jameal-J/HTML_LEARNZ" },
-  { name: "CSS Projects (17)", url: "https://github.com/Mohammed-Jameal-J/CSS_LEARNZ" },
-  { name: "JS Projects (7)", url: "https://github.com/yourusername/js-projects" },
-  { name: "React Projects (26)", url: "https://github.com/Mohammed-Jameal-J/REACT_LEARNZ" }
+  { name: "HTML Projects (4)", url: "https://github.com/Mohammed-Jameal-J/HTML_LEARNZ" },
+  { name: "CSS Projects (19)", url: "https://github.com/Mohammed-Jameal-J/CSS_LEARNZ" },
+  { name: "JS Projects (11)", url: "https://github.com/Mohammed-Jameal-J/LEARN_JS" },
+  { name: "React Projects (20)", url: "https://github.com/Mohammed-Jameal-J/REACT_LEARNZ" }
 ];
 
 export default function Projects() {
