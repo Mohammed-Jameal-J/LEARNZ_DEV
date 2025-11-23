@@ -19,7 +19,7 @@ export default function Header() {
           <nav className="header-nav desktop-only">
             <a href="#skills">Skills</a>
             <a href="#connect">Connect</a>
-            <a href="#">Portfolio</a>
+            <a href="https://mohammed-jameal-j.github.io/My-Portfolio/">Portfolio</a>
           </nav>
 
           {/* Right side: nav / profile */}
@@ -65,7 +65,6 @@ export default function Header() {
             <div className="modal-body">
               <h3>About Me</h3>
               <p><strong>User:</strong> Mohammed Jameal J</p>
-              <p><strong>Role:</strong> Frontend developer with 2 years of experience</p>
 
               <div className="modal-buttons">
                 <a className="btn-gh" href="https://github.com/Mohammed-Jameal-J" target="_blank" rel="noreferrer">

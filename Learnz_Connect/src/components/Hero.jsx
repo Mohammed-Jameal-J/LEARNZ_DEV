@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="hero">
       <div className="container hero-inner">
         <div className="hero-left">
-          <h1 className="hero-title">Learnz Development Hub<br />Learner</h1>
+          <h1 className="hero-title">Learnz Development Hub <span>Learner</span></h1>
           <p className="hero-sub">This site is built from everything I learned on the course projects, recordings and documentation.</p>
         </div>
 
