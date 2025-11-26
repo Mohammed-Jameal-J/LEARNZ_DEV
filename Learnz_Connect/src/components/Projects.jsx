@@ -4,7 +4,7 @@ const repos = [
   { name: "HTML Projects (4)", url: "https://github.com/Mohammed-Jameal-J/HTML_LEARNZ" },
   { name: "CSS Projects (19)", url: "https://github.com/Mohammed-Jameal-J/CSS_LEARNZ" },
   { name: "JS Projects (11)", url: "https://github.com/Mohammed-Jameal-J/LEARN_JS" },
-  { name: "REACT Projects (20)", url: "https://github.com/Mohammed-Jameal-J/REACT_LEARNZ" }
+  { name: "REACT Projects (20)", url: "https://github.com/Mohammed-Jameal-J/LEARNZ_REACT" }
 ];
 
 export default function Projects() {
