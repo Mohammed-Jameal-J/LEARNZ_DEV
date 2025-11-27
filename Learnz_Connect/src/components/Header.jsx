@@ -53,7 +53,7 @@ export default function Header() {
         <div className={`mobile-nav ${menuOpen ? "open" : ""}`}>
           <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
           <a href="#connect" onClick={() => setMenuOpen(false)}>Connect</a>
-          <a href="#" onClick={() => setMenuOpen(false)}>Portfolio</a>
+          <a href="https://mohammed-jameal-j.github.io/My-Portfolio" onClick={() => setMenuOpen(false)}>Portfolio</a>
         </div>
       </header>
 
