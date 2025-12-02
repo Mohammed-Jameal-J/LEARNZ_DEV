@@ -275,7 +275,7 @@ body{
 @media(max-width:640px){
   .hero-title{font-size:28px}
   .skills-grid{grid-template-columns:repeat(2,1fr)}
-  .container{padding:0 14px}
+  .container{padding:0 14px;text-align: center;}
 }
 /* larger icon (badge) */
 .skill-icon{
@@ -311,4 +311,147 @@ body{
 }
 main {
     background: #0d1e30;
+}
+
+/* ---------- About (two-column) ---------- */
+/* Center version of about section */
+.about-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title-center {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* about paragraph */
+.about-text {
+  color: rgba(255,255,255,0.88);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* Centered button row */
+.about-center-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+/* CTA styles (reuse / adapt to site) */
+.btn-primary {
+  background: linear-gradient(90deg,#0284c7,#ec4899);
+  color: #fff;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #e6eefc;
+  padding:10px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* ---------- Certificates ---------- */
+/* Certificates Section */
+.certificates-section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+/* 3 cards per row (desktop), medium width */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* Each certificate card */
+.cert-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.25);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+/* Image box (medium width) */
+.cert-img-box {
+  width: 100%;
+  height: 180px; /* Medium height */
+  background: #f8f9fb;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.cert-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text under image */
+.cert-text {
+  padding: 12px 12px 6px;
+}
+
+.cert-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f1724;
+  margin-bottom: 4px;
+}
+
+.cert-issuer {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Tablet */
+@media (max-width: 980px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-center {
+  /* max-width: 1200px;
+  margin: 0 auto; */
+  text-align: justify;
+}
+
+  .cert-img-box {
+    height: 160px;
+  }
+}
+
+
+/* ---------- Responsive: stack on small screens ---------- */
+@media (max-width: 980px){
+  .about-grid{ grid-template-columns: 1fr; }
+  .about-image-card{ width:100%; height:260px; }
+  .section-inner{ width: calc(100% - 40px); padding: 0 20px; }
+
+  .cert-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px){
+  .cert-grid{ grid-template-columns: 1fr; }
+  .about-image-card{ height:200px; }
+  .about-section{ padding-top:28px; padding-bottom:28px; }
+  .certificates-section{ padding-top:24px; padding-bottom:40px; }
 }
