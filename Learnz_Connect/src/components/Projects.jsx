@@ -6,7 +6,7 @@ const repos = [
   { name: "JS Projects (12)", url: "https://github.com/Mohammed-Jameal-J/LEARN_JS" },
   { name: "REACT Projects (19)", url: "https://github.com/Mohammed-Jameal-J/LEARNZ_REACT" },
   { name: "TMDB", url: "https://react-day17-tmbd-p.vercel.app/" },
-  { name: "Fake Store Api", ur: "https://learnz-react.vercel.app/" }
+  { name: "Fake Store Api", url: "https://learnz-react.vercel.app/" }
 ];
 
 export default function Projects() {
